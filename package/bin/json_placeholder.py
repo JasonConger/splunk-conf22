@@ -4,7 +4,7 @@ import sys
 import time
 import datetime
 import json
-
+import import_declare_test
 from splunklib import modularinput as smi
 
 
@@ -14,7 +14,7 @@ bin_dir = os.path.basename(__file__)
 
 '''
 '''
-import import_declare_test
+
 
 import os
 import os.path as op
