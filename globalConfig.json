@@ -1,8 +1,8 @@
 {
     "meta": {
         "name": "TA-conf22-debugging",
-        "displayName": ".conf22 Debubbing",
-        "version": "0.0.0Rfb465ad",
+        "displayName": ".conf22 Debugging",
+        "version": "1.0.0",
         "restRoot": "TA_conf22_debugging",
         "schemaVersion": "0.0.3"
     },
