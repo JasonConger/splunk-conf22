@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "info": {
-    "title": ".conf22 Debubbing",
+    "title": ".conf22 Debugging",
     "id": {
       "group": null,
       "name": "TA-conf22-debugging",
