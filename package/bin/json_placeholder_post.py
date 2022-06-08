@@ -7,10 +7,10 @@ import requests
 import os
 from splunktaucclib.alert_actions_base import ModularAlertBase
 
-class AlertActionWorker_post_post(ModularAlertBase):
+class AlertActionWorker_json_placeholder_post(ModularAlertBase):
 
     def __init__(self, ta_name, alert_name):
-        super(AlertActionWorker_post_post, self).__init__(ta_name, alert_name)
+        super(AlertActionWorker_json_placeholder_post, self).__init__(ta_name, alert_name)
 
     def validate_params(self):
 
@@ -29,7 +29,8 @@ class AlertActionWorker_post_post(ModularAlertBase):
         return True
 
     def process_event(helper, *args, **kwargs):
-        helper.log_info("_Splunk_ alert action post_post started.")
+
+        helper.log_info("_Splunk_ alert action json_placeholder_post started.")
         title = helper.get_param("title")
         body = helper.get_param("body")
         userId = helper.get_param("userid")
@@ -60,5 +61,5 @@ class AlertActionWorker_post_post(ModularAlertBase):
         return 0
 
 if __name__ == "__main__":
-    exitcode = AlertActionWorker_post_post("TA-conf22-debugging", "post_post").run(sys.argv)
+    exitcode = AlertActionWorker_json_placeholder_post("TA-conf22-debugging", "json_placeholder_post").run(sys.argv)
     sys.exit(exitcode)

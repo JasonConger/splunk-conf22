@@ -1,3 +1,4 @@
+# encoding = utf-8
 
 import os
 import sys
@@ -6,35 +7,14 @@ import datetime
 import json
 import import_declare_test
 from splunklib import modularinput as smi
-
-
-
-
 bin_dir = os.path.basename(__file__)
-
-'''
-'''
-
-
-import os
-import os.path as op
-import sys
-import time
-import datetime
-import json
-
 import traceback
 import requests
 from splunklib import modularinput as smi
 from solnlib import conf_manager
 from solnlib import log
 from solnlib.modular_input import checkpointer
-from splunktaucclib.modinput_wrapper import base_modinput  as base_mi 
-import requests
-
-# encoding = utf-8
-
-
+from splunktaucclib.modinput_wrapper import base_modinput  as base_mi
 
 class ModInputjson_placeholder(base_mi.BaseModInput):
 
@@ -51,26 +31,20 @@ class ModInputjson_placeholder(base_mi.BaseModInput):
         scheme.use_external_validation = True
         scheme.streaming_mode_xml = True
 
-        scheme.add_argument(smi.Argument("name", title="Name",
-                                         description="",
-                                         required_on_create=True))
+        scheme.add_argument(smi.Argument("name", 
+                                        title="Name",
+                                        description="",
+                                        required_on_create=True))
 
-        """
-        For customized inputs, hard code the arguments here to hide argument detail from users.
-        For other input types, arguments should be get from input_module. Defining new input types could be easier.
-        """
-        scheme.add_argument(smi.Argument("resource", title="Resource",
-                                         description="The resource to query for results",
-                                         required_on_create=True,
-                                         required_on_edit=False))
+        scheme.add_argument(smi.Argument("resource", 
+                                        title="Resource",
+                                        description="The resource to query for results",
+                                        required_on_create=True,
+                                        required_on_edit=False))
         return scheme
-
-    def get_app_name(self):
-        return "TA-conf22-debugging"
 
     def validate_input(helper, definition):
         pass
-    
 
     def collect_events(helper, ew):
         resource = helper.get_arg("resource")
