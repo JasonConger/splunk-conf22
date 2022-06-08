@@ -1,10 +1,8 @@
 # Splunk .conf22 - DEV1385C Debug Deep Dive
-Companion Material
-
-[https://conf.splunk.com/sessions.html?search=dev1385c#/](https://conf.splunk.com/sessions.html?search=dev1385c#/)
+Companion material and source code for all demos performed in session [DEV1385C](https://conf.splunk.com/sessions.html?search=dev1385c#/)
 
 # General Debugging Workflow
-  1. From Visual Studio Code, **open the folder** of the Splunk app on the Splunk instance containing the thing you want to debug.  For example, to debug a modular input in an app with an ID of `TA-conf22-debugging`, open the following folder in Visual Stuido Code:
+  1. From Visual Studio Code, **open the folder** of the Splunk app on the Splunk instance containing the thing you want to debug.  For example, to debug a modular input in an app with an ID of `TA-conf22-debugging`, open the following folder in Visual Studio Code:
 
     $SPLUNK_HOME/etc/apps/TA-conf22-debugging
 
@@ -39,7 +37,7 @@ SPLUNKBASE_USERNAME=<YOUR SPLUNKBASE USERNAME>
 # Create an OS environment variable for your Splunkbase password.  Example:
 # export SPLUNKBASE_PASSWORD=<YOUR SPLUNKBASE PASSWORD>
 
-# Optional - install the Splunk Add-on for Visual Studio Code for debugging
+# Optional - install the Splunk Add-on for Microsoft Visual Studio Code for debugging
 SPLUNK_APPS_URL=https://splunkbase.splunk.com/app/4801/release/0.1.2/download
 ```
 
