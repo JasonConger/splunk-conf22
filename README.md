@@ -57,3 +57,4 @@ Launch the container using the following command from the root of the repository
 * [Splunk UCC Generator](https://github.com/splunk/addonfactory-ucc-generator)
 * [Search command examples](https://github.com/splunk/splunk-sdk-python/tree/master/examples/searchcommands_app)
 * [.conf21 DEV1147C - Secrets From the Developer Kitchen - Develop On Splunk Like a Pro With UCC, Visual Studio Code and Git](https://conf.splunk.com/watch/conf-online.html?search=dev1147c)
+* [Splunk Docker compose examples](https://splunk.github.io/docker-splunk/EXAMPLES.html)
